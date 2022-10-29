@@ -1,7 +1,6 @@
 import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-scroll'
-import CV from '../assets/CV_Muhammad_Fikri_Ardiayansyah.pdf'
 
 const Home = () => {
   return (
@@ -21,9 +20,6 @@ const Home = () => {
               <span className='group-hover:rotate-90 duration-300'>
                 <HiArrowNarrowRight className='ml-3'/>
               </span>
-            </button>
-            <button className='text-gray-700 group border-2 border-[#423ebe] px-6 py-3 my-2 flex items-center hover:text-white hover:bg-[#423ebe] hover:border-[#423ebe]'>
-              <a href={CV} download={CV}>Download</a>
             </button>
           </div>
       </div>
