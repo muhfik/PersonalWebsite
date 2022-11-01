@@ -14,11 +14,11 @@ import Github from '../assets/github.png'
 
 const Skills = () => {
     return(
-        <div name='skills' className='w-full h-screen bg-[#ecf0f3] text-gray-700'>
-            <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div name='skills' className='w-full md:h-screen bg-[#ecf0f3] text-gray-700'>
+            <div className='max-w-[1000px] mx-auto p-4 justify-center w-full h-full'>
                 <div>
                     <p className='text-2xl font-bold text-[#423ebe]'>Skills</p>
-                    <p className='text-4xl font-bold pb-6'>What I Can Do</p>
+                    <p className='text-4xl font-bold'>What I Can Do</p>
                 </div>
                 <div className='w-full grid grid-cols-2 sm:grid-cols-3 text-center gap-4 py-8'>
                     <div className='p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300'>

@@ -6,8 +6,8 @@ const Project = () => {
     const project = data;
 
     return (
-        <div name='project' className='w-full md:h-screen text-gray-700 bg-[#ecf0f3]'>
-            <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div name='project' className='w-full md:h-screen text-gray-700 bg-[#ecf0f3] md:pt-20'>
+            <div className='max-w-[1000px] mx-auto p-4 justify-center w-full h-full'>
                 <div>
                     <p className='text-2xl font-bold text-[#423ebe]'>Project</p>
                     <p className='text-4xl font-bold pb-6'>What I've Built</p>
