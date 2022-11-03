@@ -13,7 +13,6 @@ const Navbar = () => {
     const [navBg] = useState('#ecf0f3');
     const [linkColor] = useState('#1f2937');
   
-
     const handleNav = () => {
         setNav(!nav);
     };
@@ -43,41 +42,40 @@ const Navbar = () => {
                 <p className='text-4xl font-bold text-[#423ebe]'>M<span className='text-4xl font-bold text-black'>e</span></p>
             </div>
             <div>
-            <ul style={{ color: `${linkColor}` }} className='hidden md:flex font-bold'>
-                <li>
-                    <Link to='home' smooth={true} duration={500}>
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link to='about' smooth={true} duration={500}>
-                        About
-                    </Link>
-                </li>
-                <li>
-                    <Link to='skills' smooth={true} duration={500}>
-                        Skills
-                    </Link>
-                </li>
-                <li>
-                    <Link to='project' smooth={true} duration={500}>
-                        Project
-                    </Link>
-                </li>
-                <li>
-                    <Link to='contact' smooth={true} duration={500}>
-                        Contact
-                    </Link>
-                </li>
-            </ul>
-
-            <div
-                style={{ color: `${linkColor}` }}
-                onClick={handleNav}
-                className='md:hidden'
-            >
-                <AiOutlineMenu size={25} />
-            </div>
+                <ul style={{ color: `${linkColor}` }} className='hidden md:flex font-bold'>
+                    <li>
+                        <Link to='home' smooth={true} duration={500}>
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='about' smooth={true} duration={500}>
+                            About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='skills' smooth={true} duration={500}>
+                            Skills
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='project' smooth={true} duration={500}>
+                            Project
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='contact' smooth={true} duration={500}>
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+                <div
+                    style={{ color: `${linkColor}` }}
+                    onClick={handleNav}
+                    className='md:hidden'
+                >
+                    <AiOutlineMenu size={25} />
+                </div>
             </div>
         </div>
 
@@ -93,124 +91,127 @@ const Navbar = () => {
                 : 'fixed right-[-100%] top-0 p-10 ease-in duration-500'
             }
             >
-            <div>
-                <div className='flex w-full items-center justify-between'>
-             
-                <div
-                    onClick={handleNav}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
-                >
-                    <AiOutlineClose />
+                <div>
+                    <div className='flex w-full items-center justify-between'>
+                        <div
+                            onClick={handleNav}
+                            className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                        >
+                            <AiOutlineClose />
+                        </div>
+                    </div>
+                    <div className='border-b border-gray-300 my-4'></div>
                 </div>
-                </div>
-                <div className='border-b border-gray-300 my-4'></div>
-            </div>
-            <div className='py-4 flex flex-col'>
-                <ul className='uppercase'>
-                    <li className='py-4 flex flex-col text-sm'>
-                        <Link onClick={handleNav} to='home' smooth={true} duration={500}>
-                        Home
-                        </Link>
-                    </li>
-                    <li className='py-4 flex flex-col text-sm'>
-                        <Link onClick={handleNav} to='about' smooth={true} duration={500}>
-                            About
-                        </Link>
-                    </li>
-                    <li className='py-4 flex flex-col text-sm'>
-                        <Link onClick={handleNav} to='skills' smooth={true} duration={500}>
-                            Skills
-                        </Link>
-                    </li>
-                    <li className='py-4 flex flex-col text-sm'>
-                        <Link onClick={handleNav} to='project' smooth={true} duration={500}>
-                            Project
-                        </Link>
-                    </li>
-                    <li className='py-4 flex flex-col text-sm'>
-                        <Link onClick={handleNav} to='contact' smooth={true} duration={500}>
-                            Contact
-                        </Link>
-                    </li>   
-                </ul>
-
-                <div className='pt-20'>
-                <p className='uppercase tracking-widest text-[#5651e5]'>
-                    Let&#39;s Connect
-                </p>
-                <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                    <a
-                    href='https://www.linkedin.com'
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <FaLinkedin />
-                    </div>
-                    </a>
-                    <a
-                    href='https://github.com/muhfik'
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                        <FaGithub />
-                    </div>
-                    </a>
-                    <Link href='/#contact'>
-                    <div
-                        onClick={() => setNav(!nav)}
-                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                    >
-                        <AiOutlineMail />
-                    </div>
-                    </Link>
-                    <Link href='/resume'>
-                    <div
-                        onClick={() => setNav(!nav)}
-                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                    >
-                        <BsFillPersonLinesFill />
-                    </div>
-                    </Link>
-                </div>
-                <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-                    <ul>
-                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-700'>
-                            <a className='flex justify-between items-center w-full text-white' 
-                            href='https://www.linkedin.com'
-                            target='_blank'
-                            rel='noreferrer'
-                            >
-                                Linkedin <FaLinkedin size={30}/>
-                            </a>
+                <div className='py-4 flex flex-col'>
+                    <ul className='uppercase'>
+                        <li className='py-4 flex flex-col text-sm'>
+                            <Link onClick={handleNav} to='home' smooth={true} duration={500}>
+                            Home
+                            </Link>
                         </li>
-                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700'>
-                            <a className='flex justify-between items-center w-full text-white' 
-                            href='https://github.com/muhfik'
-                            target='_blank'
-                            rel='noreferrer'
-                            >
-                                Github <FaGithub size={30}/>
-                            </a>
+                        <li className='py-4 flex flex-col text-sm'>
+                            <Link onClick={handleNav} to='about' smooth={true} duration={500}>
+                                About
+                            </Link>
                         </li>
-                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-                            <a className='flex justify-between items-center w-full text-white' 
-                            href='/'>
-                                Email <HiOutlineMail size={30}/>
-                            </a>
+                        <li className='py-4 flex flex-col text-sm'>
+                            <Link onClick={handleNav} to='skills' smooth={true} duration={500}>
+                                Skills
+                            </Link>
                         </li>
-                        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                            <a className='flex justify-between items-center w-full text-white' 
-                            href='/'>
-                                Resume <BsFillPersonLinesFill size={30}/>
-                            </a>
+                        <li className='py-4 flex flex-col text-sm'>
+                            <Link onClick={handleNav} to='project' smooth={true} duration={500}>
+                                Project
+                            </Link>
                         </li>
+                        <li className='py-4 flex flex-col text-sm'>
+                            <Link onClick={handleNav} to='contact' smooth={true} duration={500}>
+                                Contact
+                            </Link>
+                        </li>   
                     </ul>
+
+                    <div className='pt-10'>
+                        <p className='uppercase tracking-widest text-[#5651e5]'>
+                            Let&#39;s Connect
+                        </p>
+                        <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                            <a
+                                href='https://www.linkedin.com/in/muhfikrii3/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <FaLinkedin />
+                                </div>
+                            </a>
+                            <a
+                                href='https://github.com/muhfik/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <FaGithub />
+                                </div>
+                            </a>
+                                <Link href='/#contact'>
+                                    <div
+                                        onClick={() => setNav(!nav)}
+                                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                                    >
+                                        <AiOutlineMail />
+                                    </div>
+                                </Link>
+                            <a
+                                href='mailto:muhammadfikri0398@gmail.com'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <BsFillPersonLinesFill />
+                                </div>
+                            </a>
+                        </div>
+                        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+                            <ul>
+                                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-700'>
+                                    <a className='flex justify-between items-center w-full text-white' 
+                                        href='https://www.linkedin.com/in/muhfikrii3/'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
+                                        Linkedin <FaLinkedin size={30}/>
+                                    </a>
+                                </li>
+                                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700'>
+                                    <a className='flex justify-between items-center w-full text-white' 
+                                        href='https://github.com/muhfik/'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
+                                        Github <FaGithub size={30}/>
+                                    </a>
+                                </li>
+                                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700'>
+                                    <a className='flex justify-between items-center w-full text-white' 
+                                        href='mailto:muhammadfikri0398@gmail.com'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
+                                        Email <HiOutlineMail size={30}/>
+                                    </a>
+                                </li>
+                                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+                                    <a className='flex justify-between items-center w-full text-white' 
+                                        href='/'>
+                                            Resume <BsFillPersonLinesFill size={30}/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
     );

@@ -6,8 +6,8 @@ const Project = () => {
     const project = data;
 
     return (
-        <div name='project' className='w-full md:h-screen text-gray-700 bg-[#ecf0f3] md:pt-20'>
-            <div className='max-w-[1000px] mx-auto p-4 justify-center w-full h-full'>
+        <div name='project' className='w-full min-h-screen text-gray-700 bg-[#ecf0f3] md:pt-20'>
+            <div className='max-w-[1000px] mx-auto p-4 justify-center w-full min-h-screen'>
                 <div>
                     <p className='text-2xl font-bold text-[#423ebe]'>Project</p>
                     <p className='text-4xl font-bold pb-6'>What I've Built</p>
@@ -35,7 +35,6 @@ const Project = () => {
                                     Code
                                 </button>
                                 </a>
-                                {/* eslint-disable-next-line */}
                                 <a href={item.live} target='_blank'>
                                 <button
                                     className='text-center rounded-lg px-4 py-3 m-2
