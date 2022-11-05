@@ -154,23 +154,16 @@ const Navbar = () => {
                                     <FaGithub />
                                 </div>
                             </a>
-                                <Link href='/#contact'>
-                                    <div
-                                        onClick={() => setNav(!nav)}
-                                        className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
-                                    >
-                                        <AiOutlineMail />
-                                    </div>
-                                </Link>
                             <a
                                 href='mailto:muhammadfikri0398@gmail.com'
                                 target='_blank'
                                 rel='noreferrer'
                             >
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <BsFillPersonLinesFill />
+                                    <AiOutlineMail />
                                 </div>
                             </a>
+                            
                         </div>
                         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                             <ul>
@@ -192,7 +185,7 @@ const Navbar = () => {
                                         Github <FaGithub size={30}/>
                                     </a>
                                 </li>
-                                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-700'>
+                                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
                                     <a className='flex justify-between items-center w-full text-white' 
                                         href='mailto:muhammadfikri0398@gmail.com'
                                         target='_blank'
@@ -201,12 +194,7 @@ const Navbar = () => {
                                         Email <HiOutlineMail size={30}/>
                                     </a>
                                 </li>
-                                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                                    <a className='flex justify-between items-center w-full text-white' 
-                                        href='/'>
-                                            Resume <BsFillPersonLinesFill size={30}/>
-                                    </a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
