@@ -26,7 +26,7 @@ const Project = () => {
                                 <span className="text-2xl font bold text-white tracking-wider ">
                                     {item.name}
                                 </span>
-                            <div className="pt-8 text-center ">
+                            {/* <div className="pt-8 text-center ">
                                 <a href={item.github} target='_blank'>
                                 <button
                                     className='text-center rounded-lg px-4 py-3 m-2
@@ -43,6 +43,9 @@ const Project = () => {
                                     Demo
                                 </button>
                                 </a>
+                            </div> */}
+                            <div className="pt-8 text-center  text-white">
+                               Coming soon
                             </div>
                             </div>
                         </div>
