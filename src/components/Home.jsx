@@ -19,13 +19,7 @@ const Home = () => {
                     <span className='group-hover:rotate-90 duration-300'>
                     </span>
                     </button>
-                    <button className='hover:bg-[#ecf0f3] hover:text-gray-700 group border-2 hover:border-[#423ebe] px-6 py-3 my-2 flex items-center text-white bg-[#423ebe] border-[#423ebe]'>
-                        <a href='CV_Muhammad_Fikri_Ardiayansyah.pdf' download='Resume Muhammad Fikri Ardiayansyah.pdf'>
-                            Get Resume
-                        </a>
-                    <span className='group-hover:rotate-90 duration-300'>
-                    </span>
-                    </button>
+                    
                 </div>
             </div>
         </div>
